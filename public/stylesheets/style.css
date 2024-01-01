@@ -174,12 +174,10 @@ a:hover {
   justify-content: center;
   align-items: center;
   background-color: beige;
-
 }
 
-.showreel>video {
-  position: relative;
-  width: max-content;
+.showreel>iframe {
+  width: 70%;
   height: 100%;
 }
 
@@ -469,7 +467,7 @@ a:hover {
 
 .box3_slide2 {
   background-image: url(../images/Cinematography.jpg);
-  
+
 
 }
 
@@ -1486,7 +1484,8 @@ a:hover {
   position: relative;
   transform: translateY(30%);
 }
-.portimg1  {
+
+.portimg1 {
   position: absolute;
   right: 20%;
   bottom: 0;
