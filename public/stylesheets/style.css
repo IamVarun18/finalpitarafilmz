@@ -309,12 +309,12 @@ a:hover {
 
   .showreel {
     width: 100vw;
-    height: 90vh;
+    height: 30vh;
     background-color: red;
   }
 
-  .showreel>video {
-    width: 100vw;
+  .showreel>iframe {
+    width: 100%;
     height: 100%;
   }
 
@@ -440,18 +440,14 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
-
   background-image: url(../images/Cinematography.jpg);
   box-shadow: 10px 10px 1000px 30px rgba(0, 0, 0, 0.573) inset;
-
   background-size: cover;
   display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 1vmax;
   color: white;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .swiper-slide img {
@@ -463,11 +459,11 @@ a:hover {
 
 .box3_slide1 {
   background-image: url(../images/Director.jpg);
+
 }
 
 .box3_slide2 {
   background-image: url(../images/Cinematography.jpg);
-
 
 }
 
@@ -477,7 +473,7 @@ a:hover {
 }
 
 .box3_slide4 {
-  background-image: url(../images/VFX.jpg);
+  background-image: url(../images/video.jpg);
 }
 
 .box3_slide5 {
@@ -486,21 +482,25 @@ a:hover {
 }
 
 .box3_slide6 {
-  background-image: url(../images/Script\ Writing.jpg);
+  background-image: url(../images/VFX.jpg);
 }
 
 .box3_slide7 {
-  background-image: url(../images/VoiceOver&Dubbing.jpg);
+  background-image: url(../images/Script\ Writing.jpg);
 }
 
 .box3_slide8 {
-  background-image: url(../images/Graphic\ Designing.jpg);
-}
+  background-image: url(../images/VoiceOver&Dubbing.jpg);
 
+}
 .box3_slide9 {
-  background-image: url(../images/video.jpg);
+  background-image: url(../images/Graphic\ Designing.jpg);
+  
 }
-
+.box3_slide10 {
+  background-image: url(../images/web.jpg);
+  
+}
 
 .box4>img {
   /* border: 5px solid black; */
@@ -679,7 +679,7 @@ a:hover {
   /* demo */
   .swiper {
     width: 100%;
-    height: 50%;
+    height: 25%;
     transform: translateY(-20.5vh);
 
   }
@@ -694,8 +694,11 @@ a:hover {
     background-image: url(../images/Cinematography.jpg);
     box-shadow: 10px 10px 1000px 30px rgba(0, 0, 0, 0.573) inset;
     background-size: cover;
-    font-size: 2.1vmax;
+    display: flex;
+    font-size: 1vmax;
     color: white;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .swiper-slide img {
@@ -706,36 +709,48 @@ a:hover {
   }
 
   .box3_slide1 {
-    background-image: url(../images/Cinematography.jpg);
-  }
-
-  .box3_slide2 {
     background-image: url(../images/Director.jpg);
 
   }
 
+  .box3_slide2 {
+    background-image: url(../images/Cinematography.jpg);
+
+  }
+
   .box3_slide3 {
-    background-image: url(../images/Music\ Production.jpg);
+    background-image: url(../images/Photography.jpg);
+
   }
 
   .box3_slide4 {
-    background-image: url(../images/VFX.jpg);
+    background-image: url(../images/video.jpg);
   }
 
   .box3_slide5 {
-    background-image: url(../images/Photography.jpg);
+    background-image: url(../images/Music\ Production.jpg);
+  
   }
 
   .box3_slide6 {
-    background-image: url(../images/Script\ Writing.jpg);
+    background-image: url(../images/VFX.jpg);
   }
 
   .box3_slide7 {
-    background-image: url(../images/VoiceOver&Dubbing.jpg);
+    background-image: url(../images/Script\ Writing.jpg);
   }
 
   .box3_slide8 {
+    background-image: url(../images/VoiceOver&Dubbing.jpg);
+
+  }
+ .box3_slide9 {
     background-image: url(../images/Graphic\ Designing.jpg);
+    
+  }
+  .box3_slide10 {
+    background-image: url(../images/web.jpg);
+    
   }
 
 
