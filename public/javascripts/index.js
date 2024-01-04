@@ -41,28 +41,57 @@ main.addEventListener("mousemove", function (dets) {
 //     }
 
 
-
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
-    var menuIcon = document.querySelector(".menuicon");
-    var dropdown = document.querySelector(".ulitems");
-    var menuItems = document.querySelectorAll(".ulitems li a"); // Select all menu items
-  
-    menuIcon.addEventListener('click', function () {
-      dropdown.classList.toggle("active");
-    
-    });
-  
-    // Add click event listeners to close the dropdown when a menu item is clicked
-    menuItems.forEach(function (menuItem) {
-      menuItem.addEventListener('click', function () {
-        dropdown.classList.remove("active");
-      });
+  var menuIcon = document.querySelector(".menuicon");
+  var dropdown = document.querySelector(".menubar");
+
+  menuIcon.addEventListener('click', function () {
+    toggleMenu();
+  });
+
+  // Add click event listeners to close the dropdown when a menu item is clicked
+  var menuItems = document.querySelectorAll(".menubar ul li a");
+  menuItems.forEach(function (menuItem) {
+    menuItem.addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent the default behavior (scrolling to the anchor)
+      closeMenu();
     });
   });
-    
+
+  // Check if the screen width is below 480px (adjust as needed)
+  function isMobile() {
+    return window.innerWidth <= 480;
+  }
+
+  // Toggle active class based on mobile view
+  function toggleMenu() {
+    dropdown.classList.toggle("active");
+
+    // Toggle menu icon between menu and close icons
+    menuIcon.src = dropdown.classList.contains("active")
+      ? "./images/icons8-cross-30.png"
+      : "./images/icons8-menu-50.png";
+
+    // Adjust the top position based on the presence of the active class
+    if (dropdown.classList.contains("active")) {
+      dropdown.style.top = "9vh";
+    } else {
+      dropdown.style.top = "9vh";
+    }
+  }
+
+  // Close menu
+  window.closeMenu = function () {
+    dropdown.classList.remove("active");
+    dropdown.style.top = "9vh";
+    menuIcon.src = "./images/icons8-menu-50.png"; // Reset the menu icon to its original state
+  };
+
+  // Close menu when window is resized from mobile to desktop view
+  window.addEventListener('resize', toggleMenu);
+});
+
+
   
 
 
