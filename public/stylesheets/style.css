@@ -1,6 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
   margin: 0;
   padding: 0;
+
+  -webkit-box-sizing: border-box;
 
   box-sizing: border-box;
 }
@@ -36,6 +45,8 @@ a:hover {
   color: #C0370D;
   text-decoration: none;
   cursor: pointer;
+  -webkit-transition: all 0.15s;
+  -o-transition: all 0.15s;
   transition: all 0.15s;
 }
 
@@ -46,6 +57,8 @@ a:hover {
   border-radius: 50%;
   position: absolute;
   z-index: 999999;
+  -webkit-transition: all 0.15s;
+  -o-transition: all 0.15s;
   transition: all 0.15s;
 }
 
@@ -59,6 +72,7 @@ a:hover {
   background-image: url(../images/cover.jpg);
   background-size: auto;
   background-position: top;
+  -webkit-box-shadow: 10px 10px 1000px 50vw rgba(0, 0, 0, 0.573) inset;
   box-shadow: 10px 10px 1000px 50vw rgba(0, 0, 0, 0.573) inset;
 
   /* background-color: #C0370D; */
@@ -70,8 +84,14 @@ a:hover {
   width: 100vw;
   height: 10vh;
   background-color: beige;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 30%;
   font-size: 1.2vmax;
@@ -98,7 +118,11 @@ a:hover {
 
 .navbar>ul {
   /* background-color: beige; */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   justify-items: center;
   list-style: none;
@@ -123,20 +147,32 @@ a:hover {
   height: 100vh;
 
   /* background-color: blueviolet; */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   /* display: block; */
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .box1>h2 {
   position: relative;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   font-size: 3vmax;
   color: white;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 80%;
   height: auto;
@@ -170,8 +206,14 @@ a:hover {
 .showreel {
   width: 100%;
   height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: beige;
 }
@@ -180,13 +222,17 @@ a:hover {
   width: 70%;
   height: 100%;
 }
+
 .menubar {
   height: 0;
   width: 100%;
   position: fixed;
   overflow: hidden;
+  -webkit-transition: height 0.5s;
+  -o-transition: height 0.5s;
   transition: height 0.5s;
   z-index: 999;
+  -webkit-backdrop-filter: blur(45px);
   backdrop-filter: blur(45px);
 }
 
@@ -201,7 +247,7 @@ a:hover {
   padding: 0;
   width: 100vw;
   text-align: center;
-  top: 10% ;
+  top: 10%;
   position: absolute;
 }
 
@@ -211,7 +257,7 @@ a:hover {
 
 .menubar ul li a {
   text-decoration: none;
-  color:black;
+  color: black;
 
   font-size: 18px;
 }
@@ -222,9 +268,12 @@ a:hover {
   right: 10px;
   cursor: pointer;
 }
+
 .close-button.custom-position {
-  top: 50px; /* Adjust the top position as needed */
+  top: 50px;
+  /* Adjust the top position as needed */
 }
+
 @media only screen and (max-width: 480px) {
 
 
@@ -236,12 +285,18 @@ a:hover {
 
   .box1>h2 {
     position: relative;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     font-size: 3.5vmax;
     color: white;
 
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 100vw;
     height: auto;
@@ -260,7 +315,11 @@ a:hover {
     bottom: 10%;
     left: 0;
     width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
     font-size: 3vmax;
@@ -268,8 +327,14 @@ a:hover {
 
   .box2>h2 {
     font-weight: 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 1% 10%;
     font-size: 2.1vmax;
@@ -277,8 +342,12 @@ a:hover {
   }
 
   .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 80%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 
   }
@@ -286,7 +355,7 @@ a:hover {
 
   .ulitems {
     display: none;
-   
+
   }
 
   .navbar>img {
@@ -314,9 +383,11 @@ a:hover {
 
     width: 55%;
     height: auto;
-    
+
     position: relative;
     display: initial;
+    -webkit-transition: all 0.7s;
+    -o-transition: all 0.7s;
     transition: all 0.7s;
   }
 
@@ -324,11 +395,18 @@ a:hover {
 
   .navbar>ul {
     background-color: beige;
+    display: -ms-grid;
     display: grid;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     list-style: none;
     position: fixed;
+    -webkit-transition: 0.7s;
+    -o-transition: 0.7s;
     transition: 0.7s;
     top: -100%;
     width: 100vw;
@@ -338,15 +416,21 @@ a:hover {
   }
 
   .navbar>ul>li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
   .showreel {
     width: 100vw;
     height: 30vh;
-    background-color:beige;
+    background-color: beige;
   }
 
   .showreel>iframe {
@@ -390,18 +474,30 @@ a:hover {
   position: relative;
   top: 2%;
   width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
   display: flex;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-size: 4vmax;
 }
 
 .box2>h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 1% 10%;
   font-size: 1.5vmax;
@@ -411,7 +507,11 @@ a:hover {
 @media only screen and (max-width: 480px) {
   .box2>h1 {
     width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
     font-size: 5vmax;
@@ -419,7 +519,11 @@ a:hover {
 
   .box2>h2 {
     width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
     padding: 5% 6%;
@@ -453,9 +557,13 @@ a:hover {
 .box3 {
   width: 1000%;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 3vh;
   position: relative;
+  -webkit-transform: translateY(-20.5vh);
+  -ms-transform: translateY(-20.5vh);
   transform: translateY(-20.5vh);
 
 }
@@ -465,6 +573,8 @@ a:hover {
 .swiper {
   width: 100%;
   height: 50%;
+  -webkit-transform: translateY(-24.5vh);
+  -ms-transform: translateY(-24.5vh);
   transform: translateY(-24.5vh);
 
 }
@@ -473,10 +583,17 @@ a:hover {
   text-align: center;
   font-size: 18px;
   background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-image: url(../images/Cinematography.jpg);
+  -webkit-box-shadow: 10px 10px 1000px 30px rgba(0, 0, 0, 0.573) inset;
   box-shadow: 10px 10px 1000px 30px rgba(0, 0, 0, 0.573) inset;
   background-size: cover;
   display: flex;
@@ -490,6 +607,7 @@ a:hover {
   display: block;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -550,12 +668,20 @@ a:hover {
   height: auto;
   background-size: cover;
   position: absolute;
+  -webkit-transform: translateY(-5VH);
+  -ms-transform: translateY(-5VH);
   transform: translateY(-5VH);
 }
 
 .page3_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -567,6 +693,7 @@ a:hover {
   right: 20%;
   bottom: 10%;
   opacity: 15%;
+  -webkit-box-shadow: 100px;
   box-shadow: 100px;
 }
 
@@ -575,6 +702,8 @@ a:hover {
   font-size: 3vmax;
   font-style: initial;
   font-weight: 100;
+  -webkit-transform: translateY(-6vh);
+  -ms-transform: translateY(-6vh);
   transform: translateY(-6vh);
 
 }
@@ -588,9 +717,15 @@ a:hover {
 .box5_service_content1 {
   width: 100%;
   height: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 10%;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   position: absolute;
   font-weight: lighter;
@@ -600,9 +735,15 @@ a:hover {
 
 .box5_service_content1inner1>ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   gap: 30%;
+  -webkit-transform: translateY(-3vh);
+  -ms-transform: translateY(-3vh);
   transform: translateY(-3vh);
 
   font-weight: lighter;
@@ -610,10 +751,16 @@ a:hover {
 }
 
 .box5_service_content1inner2>ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 10%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   list-style: none;
+  -webkit-transform: translateY(-3vh);
+  -ms-transform: translateY(-3vh);
   transform: translateY(-3vh);
   font-weight: lighter;
   color: white;
@@ -623,20 +770,30 @@ a:hover {
   /* border: 5px solid rebeccapurple ; */
   width: 100%;
   height: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 0%;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   position: absolute;
   bottom: 15%;
   font-weight: lighter;
   color: white;
+  -webkit-transform: translateY(6vh);
+  -ms-transform: translateY(6vh);
   transform: translateY(6vh);
 
 }
 
 .box5_service_content1outer1>ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   gap: 35%;
   font-weight: lighter;
@@ -645,8 +802,12 @@ a:hover {
 }
 
 .box5_service_content1outer2>ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 55%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   list-style: none;
   font-weight: lighter;
@@ -670,8 +831,14 @@ a:hover {
   height: auto;
   position: absolute;
   bottom: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   color: white;
 }
@@ -695,10 +862,10 @@ a:hover {
   }
 
 
-  
-.horizontal {
-  display: initial;
-}
+
+  .horizontal {
+    display: initial;
+  }
 
   .box3 {
     white-space: nowrap;
@@ -714,6 +881,8 @@ a:hover {
   .swiper {
     width: 100%;
     height: 35%;
+    -webkit-transform: translateY(-20.5vh);
+    -ms-transform: translateY(-20.5vh);
     transform: translateY(-20.5vh);
 
   }
@@ -722,10 +891,17 @@ a:hover {
     text-align: center;
     font-size: 18px;
     background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background-image: url(../images/Cinematography.jpg);
+    -webkit-box-shadow: 10px 10px 1000px 30px rgba(0, 0, 0, 0.573) inset;
     box-shadow: 10px 10px 1000px 30px rgba(0, 0, 0, 0.573) inset;
     background-size: cover;
     display: flex;
@@ -739,6 +915,7 @@ a:hover {
     display: block;
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
   }
 
@@ -815,8 +992,12 @@ a:hover {
   .box5_service_content1 {
     width: 100%;
     height: 12vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 30%;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
     position: absolute;
     font-weight: lighter;
@@ -873,9 +1054,17 @@ a:hover {
     padding: 12% 0% 65% 0%;
     color: white;
     font-size: 2.5vmax;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
+    -webkit-transform: translateY(-23vh);
+    -ms-transform: translateY(-23vh);
     transform: translateY(-23vh);
     /*     
     list-style: none;
@@ -899,6 +1088,8 @@ a:hover {
     padding: 17% 32% 36% 0%;
     color: white;
     font-size: 2.5vmax;
+    -webkit-transform: translateY(-17vh);
+    -ms-transform: translateY(-17vh);
     transform: translateY(-17vh);
 
   }
@@ -917,6 +1108,8 @@ a:hover {
   height: 74vh;
   background-size: cover;
   position: absolute;
+  -webkit-transform: translateY(-10vh);
+  -ms-transform: translateY(-10vh);
   transform: translateY(-10vh);
   left: 48%;
   top: 35%;
@@ -932,15 +1125,25 @@ a:hover {
   height: auto;
   position: absolute;
   bottom: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   color: white;
 }
 
 .experience>h3 {
   width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
   font-size: 3vmax;
@@ -968,8 +1171,14 @@ a:hover {
   /* border: 5px solid red; */
   width: 100%;
   height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -998,8 +1207,14 @@ a:hover {
 
   text-align: center;
   /* background: #fff;  Adjust background color as needed */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border-radius: 2px;
 
@@ -1056,10 +1271,17 @@ a:hover {
   text-align: center;
   font-size: 18px;
   /* background: #fff; Fallback color if the image is not available */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-size: cover;
+  -webkit-box-shadow: 0vw -14vw 4vw -5vw #c0370d97 inset;
   box-shadow: 0vw -14vw 4vw -5vw #c0370d97 inset;
 }
 
@@ -1123,8 +1345,14 @@ a:hover {
     /* border: 5px solid red; */
     width: 100%;
     height: 20vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -1180,8 +1408,14 @@ a:hover {
     text-align: center;
     font-size: 18px;
     /* background: #fff;  Adjust background color as needed */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     /* Add any additional styling specific to swiper slides in this section */
   }
@@ -1191,6 +1425,7 @@ a:hover {
     width: 11%;
     height: auto;
     bottom: 18%;
+    -o-object-fit: cover;
     object-fit: cover;
     /* Add any additional styling specific to images in this swiper section */
   }
@@ -1201,8 +1436,14 @@ a:hover {
     text-align: center;
     font-size: 18px;
     /* background: #fff; Fallback color if the image is not available */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background-size: cover;
 
@@ -1267,8 +1508,13 @@ a:hover {
 }
 
 .our_work_heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-line-pack: center;
   align-content: center;
 }
 
@@ -1328,8 +1574,12 @@ a:hover {
 }
 
 .posrtfolioimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
+  -webkit-transform: translateY(30%);
+  -ms-transform: translateY(30%);
   transform: translateY(30%);
 }
 
@@ -1344,6 +1594,8 @@ a:hover {
 .portimg2 {
   position: absolute;
   right: 13%;
+  -webkit-transform: translateY(81%);
+  -ms-transform: translateY(81%);
   transform: translateY(81%);
   bottom: 0;
   width: 10vw;
@@ -1353,6 +1605,8 @@ a:hover {
 .portimg3 {
   position: absolute;
   right: 5%;
+  -webkit-transform: translateY(9%);
+  -ms-transform: translateY(9%);
   transform: translateY(9%);
   width: 10vw;
   height: auto;
@@ -1405,6 +1659,8 @@ a:hover {
   .portimg2 {
     position: absolute;
     left: 36%;
+    -webkit-transform: translateY(81%);
+    -ms-transform: translateY(81%);
     transform: translateY(81%);
     bottom: 21%;
     width: 37vw;
@@ -1414,6 +1670,8 @@ a:hover {
   .portimg3 {
     position: absolute;
     left: 60%;
+    -webkit-transform: translateY(9%);
+    -ms-transform: translateY(9%);
     transform: translateY(9%);
     width: 37vw;
     height: auto;
@@ -1470,7 +1728,11 @@ a:hover {
 
 .ourclients {
   display: flexbox;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
 }
@@ -1485,6 +1747,7 @@ a:hover {
 .client-train {
   /* overflow: hidden; */
   white-space: nowrap;
+  -webkit-animation: moveTrain 15s linear infinite;
   animation: moveTrain 15s linear infinite;
   display: inline-block;
   width: auto;
@@ -1500,20 +1763,45 @@ a:hover {
   /* Adjust the margin as needed */
 }
 
-@keyframes moveTrain {
+@-webkit-keyframes moveTrain {
   0% {
+    -webkit-transform: translateX(100%);
     transform: translateX(100%);
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
     transition: all 0.2s;
   }
 
   100% {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes moveTrain {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+
+  100% {
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 }
 
 .ourclients>h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 2%;
   font-size: 3vmax;
@@ -1539,6 +1827,8 @@ a:hover {
   width: 100%;
   height: 55vh;
   /* border: 2px solid black; */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
@@ -1577,8 +1867,14 @@ a:hover {
 }
 
 .letstalk>h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   position: absolute;
   left: 12%;
@@ -1594,13 +1890,21 @@ a:hover {
   position: relative;
   top: 16%;
   right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #C0370D;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .contactdetails2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   bottom: -25%;
   gap: 69%;
@@ -1658,9 +1962,15 @@ a:hover {
     height: 54vh;
     background-color: beige;
     /* border: 2px solid black; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -1676,6 +1986,8 @@ a:hover {
     width: 100%;
     height: 53%;
     padding: 2%;
+    -webkit-transform: translateY(-3vh);
+    -ms-transform: translateY(-3vh);
     transform: translateY(-3vh);
     /* background-color:beige; */
     /* border-top: 2px dotted black; */
@@ -1696,7 +2008,11 @@ a:hover {
 
 
   .letstalk>h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     position: absolute;
     width: 100vw;
@@ -1713,14 +2029,22 @@ a:hover {
     position: relative;
     top: 9%;
     right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: #C0370D;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
   .contactdetails2 {
     WIDTH: 100VW;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     bottom: -32%;
     gap: 15%;
