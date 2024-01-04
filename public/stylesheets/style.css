@@ -191,11 +191,12 @@ a:hover {
 }
 
 .menubar.active {
-  height: 50vh;
+  height: 60vh;
   top: 9vh;
 }
 
 .menubar ul {
+  font-weight: 800;
   list-style: none;
   padding: 0;
   width: 100vw;
@@ -266,6 +267,7 @@ a:hover {
   }
 
   .box2>h2 {
+    font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
