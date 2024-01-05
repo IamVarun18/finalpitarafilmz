@@ -40,58 +40,47 @@ main.addEventListener("mousemove", function (dets) {
 //         flag = 0;
 //     }
 
-
 document.addEventListener('DOMContentLoaded', function () {
   var menuIcon = document.querySelector(".menuicon");
   var dropdown = document.querySelector(".menubar");
 
-  menuIcon.addEventListener('click', function () {
-    toggleMenu();
-  });
+  menuIcon.addEventListener('click', toggleMenu);
 
-  // Add click event listeners to close the dropdown when a menu item is clicked
   var menuItems = document.querySelectorAll(".menubar ul li a");
   menuItems.forEach(function (menuItem) {
     menuItem.addEventListener('click', function (event) {
-      event.preventDefault(); // Prevent the default behavior (scrolling to the anchor)
+      event.preventDefault();
       closeMenu();
     });
   });
 
-  // Check if the screen width is below 480px (adjust as needed)
   function isMobile() {
     return window.innerWidth <= 480;
   }
 
-  // Toggle active class based on mobile view
   function toggleMenu() {
     dropdown.classList.toggle("active");
-
-    // Toggle menu icon between menu and close icons
     menuIcon.src = dropdown.classList.contains("active")
       ? "./images/icons8-cross-30.png"
       : "./images/icons8-menu-50.png";
 
-    // Adjust the top position based on the presence of the active class
-    if (dropdown.classList.contains("active")) {
-      dropdown.style.top = "9vh";
-    } else {
-      dropdown.style.top = "9vh";
-    }
+    dropdown.style.top = dropdown.classList.contains("active") ? "9vh" : "-100%";
   }
 
-  // Close menu
   window.closeMenu = function () {
     dropdown.classList.remove("active");
-    dropdown.style.top = "9vh";
-    menuIcon.src = "./images/icons8-menu-50.png"; // Reset the menu icon to its original state
+    dropdown.style.top = "-100%";
+    menuIcon.src = "./images/icons8-menu-50.png";
   };
 
-  // Close menu when window is resized from mobile to desktop view
-  window.addEventListener('resize', toggleMenu);
+  window.addEventListener('resize', function () {
+    if (!isMobile()) {
+      closeMenu();
+    }
+  });
 });
 
-
+// ... (rest of your code)
 
 
 
