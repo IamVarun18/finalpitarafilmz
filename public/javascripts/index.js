@@ -135,3 +135,10 @@ if (window.matchMedia("(max-width: 768px)").matches) {
   swiper.params.slidesPerView = 1;
   swiperb7.params.slidesPerView = 1;
 }
+
+
+
+
+
+
+

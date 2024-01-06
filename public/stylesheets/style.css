@@ -1188,9 +1188,17 @@ a:hover {
 
 
 
+.infopage{
+  width: 100vw;
+  height: 100vh;
+  background-color: aqua;
+  display: none;
+}
+
+
 .box7_team {
-  width: 100%;
-  height: 70vh;
+  width: 99vw;
+  height: 50vh;
   /* border: 2px solid black; */
   position: relative;
 }
@@ -1256,17 +1264,6 @@ a:hover {
   bottom: 7%;
 }
 
-/* 
-.swiperb7 .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 50%;
-  object-fit: cover;
-  /* Add any additional styling specific to images in this swiper section */
-
-
-
-/* Customize the background images for each slide */
 .swiperb7 .swiper-slide {
   text-align: center;
   font-size: 18px;
