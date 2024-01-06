@@ -1186,15 +1186,48 @@ a:hover {
   font-size: 3.7vmax;
 }
 
-
-
-.infopage{
-  width: 100vw;
-  height: 100vh;
-  background-color: aqua;
+.infopage {
   display: none;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+#individualInfoContent {
+  margin-top: 20px;
+}
+
+#individualInfoContent h2 {
+  color: #333;
+}
+
+#individualInfoContent h3 {
+  color: #555;
+}
+
+#individualInfoContent img {
+  width: 30px;
+  /* Adjust the size of the Instagram icon */
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Add your existing CSS styles for box7_team here */
+
+.swiper-slide>button {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  width: 2vw;
+  background-color: beige;
+  font-size: 1.5vmax;
+  border-radius: 10px;
+  border-color: transparent;
+  cursor: pointer;
+font-family: 'Times New Roman', Times, serif;
+}
 
 .box7_team {
   width: 99vw;
