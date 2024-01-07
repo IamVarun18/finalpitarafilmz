@@ -281,3 +281,21 @@ function viewIndividualInfo(name, role, instagramLink) {
 
 // Example: Initially showing the Team Page
 // No need to call viewIndividualInfo for a specific member initially
+
+
+
+
+// intro video
+document.addEventListener('DOMContentLoaded', function () {
+  // Hide loading screen and show main content when all resources are loaded
+  window.addEventListener('load', function () {
+    const loadingScreen = document.getElementById('loadingScreen');
+    const mainContent = document.getElementById('mainContent');
+
+    // Hide loading screen
+    loadingScreen.style.display = 'none';
+
+    // Show main content
+    mainContent.style.display = 'block';
+  });
+});
