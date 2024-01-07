@@ -183,7 +183,7 @@ function viewIndividualInfo(name, role, instagramLink) {
       <h2>${name}</h2>
       <h3>${role}</h3>
       <a href="${instagramLink}" target="_blank">
-        <img src="./images/icons8-instagram-48.png" alt="Instagram">
+        <img src="./images/ICONS-07.png" alt="Instagram">
       </a>
       <p>
         Meet our creative genius, Ashish Shrivastava, the founder and creative director of Pitara Filmz.
@@ -201,7 +201,7 @@ function viewIndividualInfo(name, role, instagramLink) {
     <h2>${name}</h2>
     <h3>${role}</h3>
     <a href="${instagramLink}" target="_blank">
-      <img src="./images/icons8-instagram-48.png" alt="Instagram">
+      <img src="./images/ICONS-07.png" alt="Instagram">
     </a>
     <p> Meet Rajnish Vinodia, our Cinematic Storyteller at Pitara Filmz! As the DOP, Cinematographer, and Video Editor with 5+ years of field expertise, Rajnish brings stories to life beyond the frames. Beyond the lens, he's passionate about Drawing, Capturing moments, Travel, and Anime.
 
@@ -216,7 +216,7 @@ function viewIndividualInfo(name, role, instagramLink) {
     <h2>${name}</h2>
     <h3>${role}</h3>
     <a href="${instagramLink}" target="_blank">
-      <img src="./images/icons8-instagram-48.png" alt="Instagram">
+      <img src="./images/ICONS-07.png" alt="Instagram">
     </a>
     <p>aayega
     </p>
@@ -228,7 +228,7 @@ function viewIndividualInfo(name, role, instagramLink) {
     <h2>${name}</h2>
     <h3>${role}</h3>
     <a href="${instagramLink}" target="_blank">
-      <img src="./images/icons8-instagram-48.png" alt="Instagram">
+      <img src="./images/ICONS-07.png" alt="Instagram">
     </a>
     <p>Meet our amazing voice entertainer, Nandini Shrivastava, Pitara's talented voiceover artist. She isn't just a storyteller; she's a passionate explorer, a book lover, and a travel enthusiast. Always eager to learn, Nandini is currently diving into the art of dubbing.
 
@@ -244,7 +244,7 @@ function viewIndividualInfo(name, role, instagramLink) {
     <h2>${name}</h2>
     <h3>${role}</h3>
     <a href="${instagramLink}" target="_blank">
-      <img src="./images/icons8-instagram-48.png" alt="Instagram">
+      <img src="./images/ICONS-07.png" alt="Instagram">
     </a>
     <p>Meet our underwater explorer Manish Kumar, skilled Cinematographer and Video Editor of Pitara Filmz, bringing 5 years of dedicated experience to deliver unique perspectives and breathtaking visuals. He expresses himself through singing. It's his way of adding melody to life beyond the lens and editing suite.
       In his words, My vision for Pitara is ambitious — to see it rise and lead as the foremost production house across the country. Together, let's turn dreams into cinematic realities at Pitara Filmz!
@@ -259,7 +259,7 @@ function viewIndividualInfo(name, role, instagramLink) {
     <h2>${name}</h2>
     <h3>${role}</h3>
     <a href="${instagramLink}" target="_blank">
-      <img src="./images/icons8-instagram-48.png" alt="Instagram">
+      <img src="./images/ICONS-07.png" alt="Instagram">
     </a>
     <p>aayega
     </p>

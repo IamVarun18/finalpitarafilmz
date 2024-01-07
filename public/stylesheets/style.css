@@ -49,11 +49,13 @@ a:hover {
   -o-transition: all 0.15s;
   transition: all 0.15s;
 }
+
 /* Style for the video element */
 video {
   width: 50vw;
   height: auto;
-  object-fit: cover; /* Adjust how the video is displayed in the container */
+  object-fit: cover;
+  /* Adjust how the video is displayed in the container */
 }
 
 /* Style for the loading screen */
@@ -63,21 +65,22 @@ video {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color:#f5f5dc; /* Background color while loading */
+  background-color: #f5f5dc;
+  /* Background color while loading */
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000; /* Set a high z-index to ensure it appears on top */
+  z-index: 1000;
+  /* Set a high z-index to ensure it appears on top */
 }
 
 /* Style for the main content */
-.page4 {
-  display: none; /* Initially hide the main content */
-}
+
 
 /* Additional styling for main content if needed */
 #mainContent {
-  display: block; /* Show the main content after loading */
+  display: block;
+  /* Show the main content after loading */
 }
 
 .cursor {
@@ -625,6 +628,7 @@ video {
   background-image: url(../images/Cinematography.jpg);
   -webkit-box-shadow: 10px 10px 1000px 30px rgba(0, 0, 0, 0.573) inset;
   box-shadow: 10px 10px 1000px 30px rgba(0, 0, 0, 0.573) inset;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   background-size: cover;
   display: flex;
   font-size: 1vmax;
@@ -750,7 +754,7 @@ video {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10%;
+  gap: 5%;
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
@@ -771,7 +775,7 @@ video {
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
-  gap: 30%;
+  gap: 17%;
   -webkit-transform: translateY(-3vh);
   -ms-transform: translateY(-3vh);
   transform: translateY(-3vh);
@@ -914,6 +918,7 @@ video {
     -webkit-transform: translateY(-20.5vh);
     -ms-transform: translateY(-20.5vh);
     transform: translateY(-20.5vh);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 
   }
 
@@ -931,7 +936,6 @@ video {
     -ms-flex-align: center;
     align-items: center;
     background-image: url(../images/Cinematography.jpg);
-    -webkit-box-shadow: 10px 10px 1000px 30px rgba(0, 0, 0, 0.573) inset;
     box-shadow: 10px 10px 1000px 30px rgba(0, 0, 0, 0.573) inset;
     background-size: cover;
     display: flex;
@@ -939,6 +943,7 @@ video {
     color: white;
     background-repeat: no-repeat;
     background-position: center;
+
   }
 
   .swiper-slide img {
@@ -1096,12 +1101,7 @@ video {
     -webkit-transform: translateY(-23vh);
     -ms-transform: translateY(-23vh);
     transform: translateY(-23vh);
-    /*     
-    list-style: none;
-    padding: 12% 14% 47% 0%;
-    color: white;
-    font-size: 2.5vmax;
-    transform: translateY(-6vh); */
+
   }
 
   .box5_service_content_right_mobileview {
@@ -1146,10 +1146,6 @@ video {
   /* border: 2px solid black; */
 }
 
-
-
-
-
 .experience {
   width: 100vw;
   height: auto;
@@ -1185,14 +1181,11 @@ video {
 
 }
 
-
-
-
 /* <!-- page3 ends --> */
 /* page4 starts  */
 .page4 {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
 
   /* border: 5px solid blue; */
 }
@@ -1217,12 +1210,25 @@ video {
 }
 
 .infopage {
+  position: relative;
+  width: 99vw;
+  height: 50vh;
   display: none;
-  background-color: #f0f0f0;
+  background-color: beige;
   padding: 20px;
   border: 2px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.infopage>button {
+  width: 10vw;
+  background-color: #C0370D;
+  border-radius: 5px;
+  border-color: transparent;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
 }
 
 #individualInfoContent {
@@ -1237,26 +1243,37 @@ video {
   color: #555;
 }
 
+#individualInfoContent p {
+  margin-top: 2%;
+}
+
 #individualInfoContent img {
-  width: 30px;
-  /* Adjust the size of the Instagram icon */
+  width: 3vw;
   height: auto;
   margin-top: 10px;
+  position: absolute;
+  left: 27%;
+  top: 21%;
 }
 
 /* Add your existing CSS styles for box7_team here */
 
 .swiper-slide>button {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
   position: absolute;
-  top: 10%;
-  right: 5%;
-  width: 2vw;
+  top: 3%;
+  font-family: 'NT Somic';
+  font-weight: 300;
+  right: 3%;
+  width: 4vw;
   background-color: beige;
-  font-size: 1.5vmax;
-  border-radius: 10px;
+  font-size: 1vmax;
+  border-radius: 5px;
+  color: black;
   border-color: transparent;
   cursor: pointer;
-font-family: 'Times New Roman', Times, serif;
+
 }
 
 .box7_team {
@@ -1268,31 +1285,12 @@ font-family: 'Times New Roman', Times, serif;
 
 
 .swiperb7 {
+
   width: 100%;
   height: 100%;
   /* Adjust height as needed */
   /* Add any additional styling specific to this swiper section */
 }
-
-.swiperb7 .swiper-slide {
-
-  text-align: center;
-  /* background: #fff;  Adjust background color as needed */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 2px;
-
-  /* Add any additional styling specific to swiper slides in this section */
-}
-
-
 
 
 
@@ -1324,7 +1322,7 @@ font-family: 'Times New Roman', Times, serif;
   height: auto;
   position: absolute;
   right: 3%;
-  bottom: 7%;
+  bottom: 12%;
 }
 
 .swiperb7 .swiper-slide {
@@ -1343,6 +1341,8 @@ font-family: 'Times New Roman', Times, serif;
   background-size: cover;
   -webkit-box-shadow: 0vw -14vw 4vw -5vw #c0370d97 inset;
   box-shadow: 0vw -14vw 4vw -5vw #c0370d97 inset;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
 }
 
 /* Replace 'url('your-image-path')' with the actual path to your background images */
@@ -1382,13 +1382,7 @@ font-family: 'Times New Roman', Times, serif;
 /* Add more styles and background images as needed */
 
 /* insta */
-.box7_slide1 img {
-  width: 3vw;
-  height: auto;
-  position: absolute;
-  right: 5%;
-  bottom: 5%;
-}
+
 
 
 @media only screen and (max-width: 480px) {
@@ -1396,7 +1390,7 @@ font-family: 'Times New Roman', Times, serif;
 
   .page4 {
     width: 100%;
-    height: 100vh;
+    height: 71vh;
 
     /* border: 5px solid blue; */
   }
@@ -1422,13 +1416,79 @@ font-family: 'Times New Roman', Times, serif;
 
 
 
+  .infopage {
+    position: relative;
+    width: 99vw;
+    height: 50vh;
+    display: none;
+    background-color: beige;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .infopage>button {
+    width: 10vw;
+    background-color: #C0370D;
+    border-radius: 5px;
+    border-color: transparent;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  #individualInfoContent {
+    margin-top: 20px;
+  }
+  
+  #individualInfoContent h2 {
+    color: #333;
+  }
+  
+  #individualInfoContent h3 {
+    color: #555;
+  }
+  
+  #individualInfoContent p {
+    margin-top: 2%;
+  }
+  
+  #individualInfoContent img {
+    width: 3vw;
+    height: auto;
+    margin-top: 10px;
+    position: absolute;
+    left: 27%;
+    top: 21%;
+  }
+  
+  /* Add your existing CSS styles for box7_team here */
+  
+  .swiper-slide>button {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  
+    position: absolute;
+    top: 3%;
+    font-family: 'NT Somic';
+    font-weight: 300;
+    right: 3%;
+    width: 4vw;
+    background-color: beige;
+    font-size: 1vmax;
+    border-radius: 5px;
+    color: black;
+    border-color: transparent;
+    cursor: pointer;
+  
+  }
 
 
 
 
   .box7_team {
     width: 100%;
-    height: 44%;
+    height: 68%;
     /* border: 2px solid black;  */
     position: relative;
   }
@@ -1464,21 +1524,6 @@ font-family: 'Times New Roman', Times, serif;
     /* Add any additional styling specific to this swiper section */
   }
 
-  .swiperb7 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    /* background: #fff;  Adjust background color as needed */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    /* Add any additional styling specific to swiper slides in this section */
-  }
 
   .swiperb7 .swiper-slide img {
     display: block;
@@ -1506,8 +1551,10 @@ font-family: 'Times New Roman', Times, serif;
     -ms-flex-align: center;
     align-items: center;
     background-size: cover;
+    -webkit-box-shadow: 0vw -14vw 4vw -5vw #c0370d97 inset;
+    box-shadow: 0vw -14vw 4vw -5vw #c0370d97 inset;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 
-    /* box-shadow: 10px 10px 1000px 30px rgba(0, 0, 0, 0.573) inset; */
   }
 
   /* Replace 'url('your-image-path')' with the actual path to your background images */
@@ -1544,7 +1591,6 @@ font-family: 'Times New Roman', Times, serif;
     background-image: url(../images/_NSP6230.jpg);
 
   }
-
 }
 
 
@@ -1553,7 +1599,6 @@ font-family: 'Times New Roman', Times, serif;
 /* page5 start */
 
 .page5_ourwork {
-  padding-top: 3%;
   width: 100%;
   height: 100vh;
 
@@ -1649,6 +1694,8 @@ font-family: 'Times New Roman', Times, serif;
   bottom: -11%;
   width: 15vw;
   height: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+
 }
 
 .portimg2 {
@@ -1660,6 +1707,8 @@ font-family: 'Times New Roman', Times, serif;
   bottom: 0;
   width: 10vw;
   height: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+
 }
 
 .portimg3 {
@@ -1671,6 +1720,8 @@ font-family: 'Times New Roman', Times, serif;
   width: 10vw;
   height: auto;
   bottom: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+
 }
 
 
