@@ -322,8 +322,8 @@ video {
     background-size:contain;
     background-position:top;
 
-    -webkit-box-shadow: 10px 10px 1000px 50vw rgba(0, 0, 0, 0.573) inset;
-    box-shadow: 10px 10px 1000px 50vw rgba(0, 0, 0, 0.573) inset;
+    -webkit-box-shadow: 10px 10px 1000px 50vw rgba(0, 0, 0, 0.273) inset;
+    box-shadow: 10px 10px 1000px 50vw rgba(0, 0, 0, 0.273) inset;
   
     /* background-color: #C0370D; */
   
