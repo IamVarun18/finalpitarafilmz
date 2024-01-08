@@ -917,7 +917,7 @@ video {
     height: 35%;
     -webkit-transform: translateY(-20.5vh);
     -ms-transform: translateY(-20.5vh);
-    transform: translateY(-20.5vh);
+    transform: translateY(-25.5vh);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 
   }
@@ -1390,8 +1390,8 @@ video {
 
   .page4 {
     width: 100%;
-    height: 71vh;
-
+    height: 88vh;
+position: relative;
     /* border: 5px solid blue; */
   }
 
@@ -1417,9 +1417,9 @@ video {
 
 
   .infopage {
-    position: relative;
+    position: absolute;
     width: 99vw;
-    height: 50vh;
+    height: 68vh;
     display: none;
     background-color: beige;
     padding: 20px;
@@ -1429,7 +1429,7 @@ video {
   }
   
   .infopage>button {
-    width: 10vw;
+    width: 17vw;
     background-color: #C0370D;
     border-radius: 5px;
     border-color: transparent;
@@ -1452,31 +1452,34 @@ video {
   
   #individualInfoContent p {
     margin-top: 2%;
+    position: relative;
+    font-size: 1.8vmax;
   }
   
   #individualInfoContent img {
-    width: 3vw;
+    
+    width: 8vw;
     height: auto;
     margin-top: 10px;
     position: absolute;
-    left: 27%;
-    top: 21%;
+    left: 34%;
+    top: 3%;
   }
   
   /* Add your existing CSS styles for box7_team here */
   
   .swiper-slide>button {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  
     position: absolute;
     top: 3%;
     font-family: 'NT Somic';
     font-weight: 300;
     right: 3%;
-    width: 4vw;
+    width: 15vw;
+    height: 4vh;
     background-color: beige;
-    font-size: 1vmax;
-    border-radius: 5px;
+    font-size: 2vmax;
+    border-radius: 2px;
     color: black;
     border-color: transparent;
     cursor: pointer;
@@ -1601,7 +1604,7 @@ video {
 .page5_ourwork {
   width: 100%;
   height: 100vh;
-
+/* position:; */
   /* border: 2px solid black; */
 }
 
