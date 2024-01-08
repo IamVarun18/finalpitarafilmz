@@ -105,8 +105,8 @@ video {
   background-image: url(../images/cover.jpg);
   background-size: auto;
   background-position: top;
-  -webkit-box-shadow: 10px 10px 1000px 50vw rgba(0, 0, 0, 0.573) inset;
-  box-shadow: 10px 10px 1000px 50vw rgba(0, 0, 0, 0.573) inset;
+  -webkit-box-shadow: 10px 10px 1000px 50vw rgba(0, 0, 0, 0.273) inset;
+  box-shadow: 10px 10px 1000px 50vw rgba(0, 0, 0, 0.273) inset;
 
   /* background-color: #C0370D; */
 
@@ -1237,6 +1237,8 @@ video {
 
 .infopage>button {
   width: 10vw;
+  height: 5vh;
+  font-size: 1.3vmax;
   background-color: #C0370D;
   border-radius: 5px;
   border-color: transparent;
@@ -1262,13 +1264,14 @@ video {
 }
 
 #individualInfoContent img {
-  width: 3vw;
+  width: 2.5vw;
   height: auto;
   margin-top: 10px;
   position: absolute;
-  left: 27%;
-  top: 21%;
+  left: 14%;
+  top: 3%;
 }
+
 
 /* Add your existing CSS styles for box7_team here */
 
