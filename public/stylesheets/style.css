@@ -314,6 +314,20 @@ video {
     display: none;
   }
 
+  .page1 {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    background-image: url(../images/cover3.png);
+    background-size:contain;
+    background-position:top;
+
+    -webkit-box-shadow: 10px 10px 1000px 50vw rgba(0, 0, 0, 0.573) inset;
+    box-shadow: 10px 10px 1000px 50vw rgba(0, 0, 0, 0.573) inset;
+  
+    /* background-color: #C0370D; */
+  
+  }
 
 
   .box1>h2 {
@@ -333,7 +347,7 @@ video {
     align-items: center;
     width: 100vw;
     height: auto;
-    top: -10%;
+    top: -23%;
   }
 
   .icon {
