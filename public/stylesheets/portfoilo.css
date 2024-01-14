@@ -382,16 +382,16 @@ body {
   }
 
   .close-button {
-    padding: 10px;
+    padding: 9px;
     background-color: red;
     color: white;
     border: none;
     cursor: pointer;
     position: fixed;
-    top: 50%;
+    top: 12%;
     width: 20vw;
-    right: 0;
     z-index: 10000;
+    left: 74%;
     /* Ensure the button is above other elements */
   }
 
