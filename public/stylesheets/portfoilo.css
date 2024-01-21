@@ -188,7 +188,8 @@ a:hover {
   /* background-color: rgba(255, 255, 255, 0.9); */
   background-color: beige;
   z-index: 9999;
-  overflow: auto; /* or overflow: scroll; */
+  overflow: auto;
+  /* or overflow: scroll; */
   margin-top: 1.5%;
 }
 
@@ -197,9 +198,12 @@ a:hover {
 }
 
 .video-container {
-  width: 39.5vw; /* Adjust the width as needed */
-  height: 50vh; /* Adjust the height as needed */
-  margin: 2.5vw; /* Adjust the margin as needed */
+  width: 39.5vw;
+  /* Adjust the width as needed */
+  height: 50vh;
+  /* Adjust the height as needed */
+  margin: 2.5vw;
+  /* Adjust the margin as needed */
   max-width: 100%;
 }
 
@@ -207,12 +211,14 @@ a:hover {
 .upper-right,
 .lower-left,
 .lower-right {
-  order: 1vh; /* Controls the order of videos */
+  order: 1vh;
+  /* Controls the order of videos */
 }
 
 .upper-left,
 .lower-left {
-  margin-bottom: 1vh; /* Adjust the margin between upper and lower videos */
+  margin-bottom: 1vh;
+  /* Adjust the margin between upper and lower videos */
 }
 
 .close-button {
@@ -250,7 +256,7 @@ a:hover {
     font-weight: 200;
     font-size: 1.6vmax;
   }
-  
+
   a:hover {
     color: #C0370D;
     text-decoration: none;
@@ -259,6 +265,7 @@ a:hover {
     -o-transition: all 0.15s;
     transition: all 0.15s;
   }
+
   .page1 {
 
     width: 100vw;
@@ -298,7 +305,7 @@ a:hover {
     width: 35vw;
     /* background-color: aqua; */
   }
-  
+
   .page1content {
     width: 100%;
     height: 80vh;
@@ -553,7 +560,7 @@ a:hover {
     display: flex;
     text-align: center;
     padding: 2%;
-  
+
   }
 
   .yellow2 {
@@ -689,7 +696,7 @@ a:hover {
     display: flex;
     text-align: center;
     padding: 2%;
- 
+
   }
 
   .page3content>h3 {
@@ -702,7 +709,7 @@ a:hover {
     display: flex;
     text-align: center;
     padding: 2%;
- 
+
   }
 
   .yellow3 {
@@ -751,7 +758,7 @@ a:hover {
 
 .post_production_content {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   position: relative;
   /* background-color: aqua; */
 }
@@ -834,7 +841,7 @@ a:hover {
     display: flex;
     text-align: center;
     padding: 2%;
-  
+
   }
 
   .post_production_content>h3 {
@@ -847,7 +854,7 @@ a:hover {
     display: flex;
     text-align: center;
     padding: 2%;
-  
+
   }
 
   .yellowpost {
@@ -893,7 +900,7 @@ a:hover {
 
 .page4content {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   position: relative;
   /* background-color: aqua; */
 }
@@ -932,7 +939,7 @@ a:hover {
 
 
 
-  .page_devotional{
+  .page_devotional {
     width: 100%;
     height: 95%;
     /* background-color: rgb(220, 182, 182); */
@@ -968,7 +975,7 @@ a:hover {
     display: flex;
     text-align: center;
     padding: 2%;
-  
+
   }
 
   .yellow4 {
@@ -1095,7 +1102,7 @@ a:hover {
     display: flex;
     text-align: center;
     padding: 2%;
- 
+
   }
 
   .yellowvfx {
@@ -1224,7 +1231,7 @@ a:hover {
     display: flex;
     text-align: center;
     padding: 2%;
-  
+
   }
 
   .yellowad {
