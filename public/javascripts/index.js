@@ -218,7 +218,9 @@ function viewIndividualInfo(name, role, instagramLink) {
     <a href="${instagramLink}" target="_blank">
       <img src="./images/ICONS-07.png" alt="Instagram">
     </a>
-    <p>aayega
+    <p>Meet the Architect of our narratives, Ravidip Mishra, the brilliant content writer of Pitara Filmz!   
+    In his words:
+    Hello, I'm Ravidip Mishra, the storyteller behind Pitara Filmz. As a content writer, I am dedicated to learning and practicing the art and craft of cinema from FTII, Pune. Alongside a team of young and talented filmmakers, Pitara Filmz is not just a production house; it's a place of trust. We are committed to creating memories and cinematic experiences that will last forever with you. Join us in the journey of crafting timeless tales!
     </p>
     `;
   }
@@ -261,7 +263,13 @@ function viewIndividualInfo(name, role, instagramLink) {
     <a href="${instagramLink}" target="_blank">
       <img src="./images/ICONS-07.png" alt="Instagram">
     </a>
-    <p>aayega
+    <p>Meet the digital wizard within our midst (Akash Pandey) VFX artist of pitara filmz. He is also a Cinematographer and 3D Compositor with 3+ years of enchanting experience.
+    Beyond the pixels, Akash finds joy in Drawing and Illustrations.
+    
+    In his words:
+    
+    
+    "My vision is to shape Pitara Filmz into India's premier production house, offering clients a one-stop solution for all their branding and promotional media content needs." Join us in the journey of crafting something extraordinary.
     </p>
     `;
   }
