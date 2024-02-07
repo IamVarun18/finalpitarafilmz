@@ -1862,8 +1862,10 @@ a:hover {
 
 .page8 {
   width: 100%;
-  height: 55vh;
+  height: 95vh;
   /* border: 2px solid black; */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
@@ -1874,9 +1876,49 @@ a:hover {
   /* background-color: white; */
   background-color: beige;
   position: relative;
-
+color: #C0370D;
   /* border-top: 2px dotted black; */
 
+}
+
+.letstalk>form {
+  width: 33vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  left: 7%;
+  top: 7%;
+  background-color: transparent;
+  
+}
+
+.letstalk>form>button {
+  width: 5vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  left: 1%;
+  padding: 2vh;
+  margin-top: 1.2vh;
+  text-align: center;
+background-color: #C0370D;
+border: none;
+color: white;
+border-radius: 2px;
+}
+
+.letstalk>form>input {
+  margin: 1vh;
+  padding: 1vw 1vw 1vw 0 ;
+  color: #C0370D;
+  background-color: transparent;
+  border-bottom: solid #C0370D 2px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  
 }
 
 .contact {
@@ -1884,14 +1926,12 @@ a:hover {
   height: 100%;
   background-color: beige;
 
-  /* background-color: white; */
-  /* border-top: 2px dotted black;  */
 }
 
 .oursericeend1>ul {
   position: absolute;
-  left: 10%;
-  top: 23%;
+  left: 6%;
+  bottom: 2%;
   padding: 2%;
   list-style: none;
   color: #C0370D;
@@ -1899,16 +1939,40 @@ a:hover {
 
 .oursericeend1>ul {
   word-spacing: 1vmax;
+  width: 70%;
+
+}
+
+.letstalk>h1 {
+  font-size: 4vmax;
+  width: 20vw;
+  position: relative;
+  left: 8%;
+  top: 2%;
+
+}
+
+.letstalk>h4 {
+  width: 30vw;
+  position: relative;
+  left: 8%;
+  top: 3.2%;
 
 }
 
 .letstalk>h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   position: absolute;
-  left: 12%;
-  top: 16%;
+  left: 8%;
+  bottom: 20%;
   font-size: 2vmax;
   color: #C0370D;
   letter-spacing: 0.3vmax;
@@ -1918,15 +1982,30 @@ a:hover {
 
 .contactdetails {
   position: relative;
-  top: 16%;
   right: 0;
+  bottom: -51%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #C0370D;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
-
+.contactdetails>a>img{
+  width: 28vw;
+    height: auto;
+    position: absolute;
+    transform: translatey(-56.5vh);
+    left: 11%;
+    border-radius: 10px;
+}
 .contactdetails2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   bottom: -25%;
   gap: 69%;

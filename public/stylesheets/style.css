@@ -319,14 +319,14 @@ video {
     width: 100vw;
     height: auto;
     background-image: url(../images/cover3.png);
-    background-size:contain;
-    background-position:top;
+    background-size: contain;
+    background-position: top;
 
     -webkit-box-shadow: 10px 10px 1000px 50vw rgba(0, 0, 0, 0.273) inset;
     box-shadow: 10px 10px 1000px 50vw rgba(0, 0, 0, 0.273) inset;
-  
+
     /* background-color: #C0370D; */
-  
+
   }
 
 
@@ -1408,7 +1408,7 @@ video {
   .page4 {
     width: 100%;
     height: 88vh;
-position: relative;
+    position: relative;
     /* border: 5px solid blue; */
   }
 
@@ -1444,7 +1444,7 @@ position: relative;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  
+
   .infopage>button {
     width: 17vw;
     background-color: #C0370D;
@@ -1452,29 +1452,29 @@ position: relative;
     border-color: transparent;
     cursor: pointer;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  
+
   }
-  
+
   #individualInfoContent {
     margin-top: 20px;
   }
-  
+
   #individualInfoContent h2 {
     color: #333;
   }
-  
+
   #individualInfoContent h3 {
     color: #555;
   }
-  
+
   #individualInfoContent p {
     margin-top: 2%;
     position: relative;
     font-size: 1.8vmax;
   }
-  
+
   #individualInfoContent img {
-    
+
     width: 8vw;
     height: auto;
     margin-top: 10px;
@@ -1482,9 +1482,9 @@ position: relative;
     left: 34%;
     top: 3%;
   }
-  
+
   /* Add your existing CSS styles for box7_team here */
-  
+
   .swiper-slide>button {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     position: absolute;
@@ -1500,7 +1500,7 @@ position: relative;
     color: black;
     border-color: transparent;
     cursor: pointer;
-  
+
   }
 
 
@@ -1621,7 +1621,7 @@ position: relative;
 .page5_ourwork {
   width: 100%;
   height: 100vh;
-/* position:; */
+  /* position:; */
   /* border: 2px solid black; */
 }
 
@@ -1956,7 +1956,7 @@ position: relative;
 
 .page7 {
   width: 100%;
-  height: 55vh;
+  height: 95vh;
   /* border: 2px solid black; */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1970,9 +1970,49 @@ position: relative;
   /* background-color: white; */
   background-color: beige;
   position: relative;
-
+color: #C0370D;
   /* border-top: 2px dotted black; */
 
+}
+
+.letstalk>form {
+  width: 33vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  left: 7%;
+  top: 7%;
+  background-color: transparent;
+  
+}
+
+.letstalk>form>button {
+  width: 5vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  left: 1%;
+  padding: 2vh;
+  margin-top: 1.2vh;
+  text-align: center;
+background-color: #C0370D;
+border: none;
+color: white;
+border-radius: 2px;
+}
+
+.letstalk>form>input {
+  margin: 1vh;
+  padding: 1vw 1vw 1vw 0 ;
+  color: #C0370D;
+  background-color: transparent;
+  border-bottom: solid #C0370D 2px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  
 }
 
 .contact {
@@ -1984,8 +2024,8 @@ position: relative;
 
 .oursericeend1>ul {
   position: absolute;
-  left: 10%;
-  top: 23%;
+  left: 6%;
+  bottom: 2%;
   padding: 2%;
   list-style: none;
   color: #C0370D;
@@ -1994,6 +2034,23 @@ position: relative;
 .oursericeend1>ul {
   word-spacing: 1vmax;
   width: 70%;
+
+}
+
+.letstalk>h1 {
+  font-size: 4vmax;
+  width: 20vw;
+  position: relative;
+  left: 8%;
+  top: 2%;
+
+}
+
+.letstalk>h4 {
+  width: 30vw;
+  position: relative;
+  left: 8%;
+  top: 3.2%;
 
 }
 
@@ -2008,8 +2065,8 @@ position: relative;
   -ms-flex-align: center;
   align-items: center;
   position: absolute;
-  left: 12%;
-  top: 16%;
+  left: 8%;
+  bottom: 20%;
   font-size: 2vmax;
   color: #C0370D;
   letter-spacing: 0.3vmax;
@@ -2019,8 +2076,8 @@ position: relative;
 
 .contactdetails {
   position: relative;
-  top: 16%;
   right: 0;
+  bottom: -51%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2032,7 +2089,14 @@ position: relative;
   -ms-flex-align: center;
   align-items: center;
 }
-
+.contactdetails>a>img{
+  width: 28vw;
+    height: auto;
+    position: absolute;
+    transform: translatey(-56.5vh);
+    left: 11%;
+    border-radius: 10px;
+}
 .contactdetails2 {
   display: -webkit-box;
   display: -ms-flexbox;
