@@ -131,7 +131,14 @@ a:hover {
   width: 42vw;
 }
 
-.yellow1 {}
+.yellow1 {
+  width: 30%;
+  height: 30.5vh;
+  position: absolute;
+  right: 5%;
+  bottom: 0%;
+  z-index: 30;
+}
 
 .orange1 {}
 
@@ -1859,7 +1866,6 @@ a:hover {
 
 
 
-
 .page8 {
   width: 100%;
   height: 95vh;
@@ -1876,7 +1882,7 @@ a:hover {
   /* background-color: white; */
   background-color: beige;
   position: relative;
-color: #C0370D;
+  color: #C0370D;
   /* border-top: 2px dotted black; */
 
 }
@@ -1890,7 +1896,7 @@ color: #C0370D;
   left: 7%;
   top: 7%;
   background-color: transparent;
-  
+
 }
 
 .letstalk>form>button {
@@ -1903,22 +1909,22 @@ color: #C0370D;
   padding: 2vh;
   margin-top: 1.2vh;
   text-align: center;
-background-color: #C0370D;
-border: none;
-color: white;
-border-radius: 2px;
+  background-color: #C0370D;
+  border: none;
+  color: white;
+  border-radius: 2px;
 }
 
 .letstalk>form>input {
   margin: 1vh;
-  padding: 1vw 1vw 1vw 0 ;
+  padding: 1vw 1vw 1vw 0;
   color: #C0370D;
   background-color: transparent;
   border-bottom: solid #C0370D 2px;
   border-top: none;
   border-left: none;
   border-right: none;
-  
+
 }
 
 .contact {
@@ -1928,20 +1934,33 @@ border-radius: 2px;
 
 }
 
+.oursericeend1 {
+  width: auto;
+  height: auto;
+  /* border: solid 2px black; */
+  transform: translateY(11.5vh);
+  margin-left: 5%;
+}
+
+.oursericeend1>h2 {
+  /* background-color: aqua; */
+  padding: 2%;
+
+}
+
 .oursericeend1>ul {
-  position: absolute;
-  left: 6%;
-  bottom: 2%;
+  /* position: absolute; */
+  /* left: 6%;
+  bottom: 2%; */
+  width: auto;
   padding: 2%;
   list-style: none;
   color: #C0370D;
-}
-
-.oursericeend1>ul {
+  /* border: solid 2px black; */
   word-spacing: 1vmax;
-  width: 70%;
 
 }
+
 
 .letstalk>h1 {
   font-size: 4vmax;
@@ -1995,14 +2014,16 @@ border-radius: 2px;
   -ms-flex-align: center;
   align-items: center;
 }
-.contactdetails>a>img{
+
+.contactdetails>a>img {
   width: 28vw;
-    height: auto;
-    position: absolute;
-    transform: translatey(-56.5vh);
-    left: 11%;
-    border-radius: 10px;
+  height: auto;
+  position: absolute;
+  transform: translatey(-56.5vh);
+  left: 11%;
+  border-radius: 10px;
 }
+
 .contactdetails2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2055,51 +2076,112 @@ border-radius: 2px;
 
 
 
-
+/* Starting Page */
 @media only screen and (max-width: 480px) {
 
+  /* Starting of Page7 Styles */
   .page8 {
     width: 100%;
-    height: 54vh;
+    height: 140vh;
     background-color: beige;
-    /* border: 2px solid black; */
+
     display: flex;
+    flex-direction: column;
     position: relative;
     flex-wrap: nowrap;
-    flex-direction: column;
   }
 
+  /* Starting of Let's Talk Styles */
   .letstalk {
+
+    height: 95vh;
     width: 100vw;
-    height: 20vh;
-    /* background-color: beige; */
+    /* background-color: violet; */
     position: relative;
-    /* border-top: 2px dotted black; */
   }
 
+  /* Starting of H1 and H4 Styles */
+  .letstalk>h1 {
+    font-size: 7vmax;
+    width: 75vw;
+  }
+
+  .letstalk>h4 {
+    font-size: 1.7vmax;
+    width: 75vw;
+  }
+
+  /* Starting of Form Input Styles */
+  .letstalk>form>input {
+    margin: 1vh;
+    padding: 1vw 1vw 1vw 0;
+    color: #C0370D;
+    background-color: transparent;
+    border-bottom: solid #C0370D 2px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 2vmax;
+    width: 80vw;
+  }
+
+  /* Starting of Form Button Styles */
+  .letstalk>form>button {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    margin-top: 1.2vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #C0370D;
+    border: none;
+    color: white;
+    border-radius: 2px;
+  }
+
+  /* Starting of Contact Styles */
   .contact {
     width: 100%;
-    height: 53%;
-    padding: 2%;
-    transform: translateY(-3vh);
-    /* background-color:beige; */
-    /* border-top: 2px dotted black; */
+    height: auto;
+    padding: 5%;
+    /* transform: translateY(12vh); */
+
+  }
+
+
+  /* Starting of Our Service List Styles */
+  .oursericeend1 {
+    width: auto;
+    height: auto;
+    /* border: solid 2px black; */
+    transform: translateY(34.5vh);
+    margin-left: 5%;
   }
 
   .oursericeend1>ul {
-    position: absolute;
     top: 33%;
     padding: 2%;
     list-style: none;
     color: #C0370D;
-    width: 100vw;
     text-align: start;
     left: 0%;
     font-size: 1.8vmax;
     word-spacing: 1.2vmax;
   }
 
+  .contactdetails>a>img {
 
+    width: 63vw;
+    height: auto;
+    position: absolute;
+    transform: translatey(-59.5vh);
+    left: 2%;
+    border-radius: 10px;
+  }
+
+  /* Starting of H2 Styles */
   .letstalk>h2 {
     display: flex;
     justify-content: center;
@@ -2113,8 +2195,9 @@ border-radius: 2px;
     letter-spacing: 0.3vmax;
   }
 
-
+  /* Starting of Contact Details Styles */
   .contactdetails {
+    width: 90vw;
     position: relative;
     top: 9%;
     right: 0;
@@ -2124,56 +2207,40 @@ border-radius: 2px;
     align-items: center;
   }
 
+  /* Starting of Contact Details2 Styles */
   .contactdetails2 {
-    WIDTH: 100VW;
+    width: 100vw;
     display: flex;
-    bottom: -32%;
+    bottom: -42%;
     gap: 15%;
     left: 6%;
     position: absolute;
   }
 
-  .whatsapp {
+  /* Starting of Social Media Icon Styles */
+  .whatsapp,
+  .instagram,
+  .linkedin {
     width: 9vw;
     height: auto;
-  }
-
-  .instagram {
-    width: 9vw;
-    height: auto;
-
   }
 
   .facebook {
     width: 5vw;
     height: auto;
-
-
   }
 
-  .linkedin {
-    width: 9vw;
-    height: auto;
-
-  }
-
+  /* Starting of Contact Details1 Styles */
   .contactdetails1>h1 {
     font-size: 3vmax;
     font-weight: 700;
-    /* letter-spacing: 0.2vmax; */
-    /* align-items: ; */
   }
 
   .contactdetails1>h2 {
     font-size: 1.8vmax;
     font-weight: 100;
   }
-
-
-
-
 }
-
 
 
 /* page 8 ends */
